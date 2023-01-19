@@ -1,0 +1,33 @@
+<body>
+    <div class="container col-md-6" id="container"><br><br>
+        <h2 class="text-centre"> Welcome employees</h2>
+        <form [formGroup]="getForm" (ngSubmit)="employeeId()">
+            <div class="input-group">
+               <input type="search" class="form-control rounded" placeholder="employeeId" aria-label="Search" formControlName="employeeId" >
+               <input type = submit>
+            </div>
+        </form>
+</div>
+</body>
+<div class="text-center">
+    <table class = "table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Salary</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{response.employeeId}}</td>
+                <td>{{response.employeeName}}</td>
+                <td>{{response.employeeSalary}}</td>
+                <td>{{response.employeeEmail}}</td>
+                <td>{{response.employeeContactNo}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
