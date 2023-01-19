@@ -1,0 +1,55 @@
+<div>
+    <form [formGroup]="register" (ngSubmit)="regsiterUser()">
+      <!-- class named "container" is assigned to div -->
+      <div class="container">
+        <h1>Register</h1>
+        <div class="user-details">
+          <div class="part-one">
+            <label for="employeeName"><b>Employee Name</b></label>
+            <input
+              type="text"
+              placeholder="Enter Employee Name"
+              formControlName="employeeName"
+              id="employeeName"
+              ng-required 
+            />
+            <br>
+            <label for="employeeSalary"><b>Salary</b></label><br>
+            <input
+              type="number"
+              placeholder="Enter employee Salary"
+              formControlName="employeeSalary"
+              id="employeeSalary"
+              ng-required
+            />
+            <br>
+            <label for="employeeEmail"><b>Email</b></label><br>
+            <input
+              type="text"
+              placeholder="Enter employee Email"
+              formControlName="employeeEmail"
+              id="employeeEmail"
+              ng-required
+            />
+            <br>
+            <label for="employeeContactNo"><b>Phone</b></label><br>
+            <input
+              type="text"
+              placeholder="Enter employee ContactNo"
+              formControlName="employeeContactNo"
+              id="employeeContactNo"
+              ng-required
+            />
+          </div>
+        </div>
+        <button type="submit">Register</button>
+        <button type="reset">Reset</button>
+      </div>
+  
+      <div>
+          <!-- a routerLink="/login routerLinkActive="active" -->
+          <p >Find All Employee <a routerLink="/employee" routerLinkActive="active">Log in</a>.</p>
+      </div>
+    </form>
+  </div>
+  

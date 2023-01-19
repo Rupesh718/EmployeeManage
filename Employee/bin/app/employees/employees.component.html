@@ -1,0 +1,22 @@
+<div class="text-center">
+    <table class = "table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Salary</th>
+                <th scope="col">Email</th>
+                <th scope="col">Phone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let employee of employeeDetails">
+                <th scope="row">{{employee.employeeId}}</th>
+                <td>{{employee.employeeName}}</td>
+                <td>{{employee.employeeSalary}}</td>
+                <td>{{employee.employeeEmail}}</td>
+                <td>{{employee.employeeContactNo}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
